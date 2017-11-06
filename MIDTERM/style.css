@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+nav{
+    height:2em;
+        border: solid 6px grey;
+      }
+
+nav ul{
+    display:none;
+
+}
+#toggle-menu{
+    float:right;
+
+}
+
+
+header {
+    text-align: center;
+    clear:both; 
+    color:white;
+    font-family: Arial;
+
+}
+
+header img {
+    max-width: 80%;
+    
+
+}
+
+body{background-image:url("background.jpg")}
+
+
+
+
+#large-photo{
+    height: 20px;
+    color:#000;
+    font-style: Arial
+    border: solid 3px gray;
+    background-color:black;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+  
+}
+#merch{
+    background-image: url("merch.png");
+}
+
+#ticketsale{
+    background-image: url("image4.png");
+   }
+
+#melanie{
+    background-image: url("melanie.png");
+   }
+#hooping{
+    background-image: url("images4.png");
+}
+
+
+footer{
+    text-align:center;
+    color:white;
+}
+@media (min-width:300px){
+   
+    #toggle-menu{       
+        display:none;
+    }
+    
+    nav ul {            
+        display:block;
+    }
+
+      nav {
+        text-align: center;
+    }
+
+    nav li{
+        display: inline-block;
+        margin: 1em 1em;
+        border: none;
+
+
+    }
+
+    nav li ul {
+        display: none;
+        position:absolute;
+        background-color black;
+        width:auto;
+        text-align: left;      
+        background-color:black;
+        font-color:#fff;
+
+    }
+
+    nav li:hover ul{
+        display: block;
+    }
+    
+    nav li li {
+            display: block;
+    }
+
+        nav li li a{
+            color:#fff)
+        }
+
+   .row{ 
+
+        flex-direction: row;
+        color:white;
+
+    }
+
+    
+    .col{
+            font-color: white;
+             display:flex;
+             flex-direction:column;
+             align-items: center;
+             justify-content: center;
+            background-color:gray;
+             border: solid 2px white;
+             height:200px;
+           }
+    
+    @media (min-width:640px){
+               .row{
+                     display:flex;
+                     flex-direction: row;
+                 }
+               .col{
+                  flex: 1 1 25%;
+
+
+
+               }
+  
